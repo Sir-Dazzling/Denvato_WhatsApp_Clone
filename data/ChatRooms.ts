@@ -12,7 +12,7 @@ export default [{
     lastMessage: {
         id: 'm1',
         content: 'Well done this sprint, guys!',
-        createdAt: '2020-10-03T14:48:00.000Z',
+        createdAt: '2020-11-22T14:48:00.000Z',
     }
 }, {
     id: '2',

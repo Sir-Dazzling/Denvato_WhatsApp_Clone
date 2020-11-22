@@ -25,10 +25,11 @@ const styles = StyleSheet.create({
     },
     lastMessage: {
         fontSize: 16,
-        color: "grey"
+        color: "grey",
+        width: "100%"
     },
     time: {
-        fontSize: 16,
+        fontSize: 14,
         color: "grey"
     }
 });

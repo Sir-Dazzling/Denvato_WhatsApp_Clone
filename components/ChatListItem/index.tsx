@@ -1,5 +1,6 @@
 import React from 'react';
 import { Text, View, Image } from 'react-native';
+import { formatDistanceToNow, format } from 'date-fns';
 import { ChatRoom } from '../../types';
 import styles from './style';
 
@@ -24,8 +25,7 @@ const ChatListItem = (props: ChatListItemProps) =>
                     <Text style={styles.lastMessage}>{chatRoom.lastMessage.content}</Text>
                 </View>
             </View>
-            {/* <Text>{chatRoom.lastMessage.createdAt}</Text> */}
-            <Text style={styles.time}>Yesterday</Text>
+            <Text style={styles.time}>{format(new Date(Date.parse(chatRoom.lastMessage.createdAt)), "dd/MM/yyyy")}</Text>
         </View>
     );
 };
