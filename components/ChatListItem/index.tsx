@@ -38,7 +38,16 @@ const ChatListItem = (props: ChatListItemProps) =>
                         <Text style={styles.lastMessage}>{chatRoom.lastMessage.content}</Text>
                     </View>
                 </View>
-                <Text style={styles.time}>{format(new Date(Date.parse(chatRoom.lastMessage.createdAt)), "dd/MM/yyyy")}</Text>
+                <Text
+                    style={styles.time}>
+                    {format(
+                        new Date(
+                            Date.parse(chatRoom.lastMessage.createdAt)
+                        ),
+                        "dd/MM/yyyy"
+                    )
+                    }
+                </Text>
             </View>
         </TouchableOpacity>
     );

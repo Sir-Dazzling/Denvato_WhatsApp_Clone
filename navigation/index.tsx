@@ -4,7 +4,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import * as React from 'react';
 import { ColorSchemeName, Image, StyleSheet, Text, TouchableHighlight, View } from 'react-native';
 import Colors from '../constants/Colors';
-import ChatRoomScreen from '../screens/ChatRoom';
+import ChatRoomScreen from '../screens/ChatRoomScreen';
 import NotFoundScreen from '../screens/NotFoundScreen';
 import { RootStackParamList } from '../types';
 import LinkingConfiguration from './LinkingConfiguration';
