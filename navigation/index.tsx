@@ -1,10 +1,11 @@
-import { MaterialCommunityIcons, Octicons, Fontisto, MaterialIcons, FontAwesome5 } from '@expo/vector-icons';
+import { FontAwesome5, MaterialCommunityIcons, MaterialIcons, Octicons } from '@expo/vector-icons';
 import { DarkTheme, DefaultTheme, NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import * as React from 'react';
 import { ColorSchemeName, Image, StyleSheet, Text, TouchableHighlight, View } from 'react-native';
 import Colors from '../constants/Colors';
 import ChatRoomScreen from '../screens/ChatRoomScreen';
+import ContactsScreen from '../screens/ContactsScreen';
 import NotFoundScreen from '../screens/NotFoundScreen';
 import { RootStackParamList } from '../types';
 import LinkingConfiguration from './LinkingConfiguration';
@@ -56,6 +57,17 @@ function RootNavigator()
             </View>
           )
         }} />
+      <Stack.Screen
+        name="Contacts"
+        component={ContactsScreen}
+        options={{
+          title: 'Contacts',
+          headerRight: () => (
+            <View style={{ marginRight: 20 }}>
+              <Octicons name="search" size={22} color={"white"} />
+            </View>
+          )
+        }} />
       <Stack.Screen name="NotFound" component={NotFoundScreen} options={{ title: 'Oops!' }} />
       <Stack.Screen
         name="ChatRoom"
@@ -91,7 +103,7 @@ function RootNavigator()
               <Text style={{
                 color: "#fff",
                 fontSize: 22
-              }}>dshj</Text>
+              }}>{route.params.name}</Text>
             </TouchableHighlight>
           ),
           headerRight: () => (

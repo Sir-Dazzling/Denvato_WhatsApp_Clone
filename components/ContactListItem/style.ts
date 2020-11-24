@@ -27,10 +27,6 @@ const styles = StyleSheet.create({
         fontSize: 16,
         color: "grey",
         width: "100%"
-    },
-    time: {
-        fontSize: 14,
-        color: "grey"
     }
 });
 

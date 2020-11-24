@@ -6,7 +6,8 @@ import Colors from '../constants/Colors';
 import { MonoText } from './StyledText';
 import { Text, View } from './Themed';
 
-export default function EditScreenInfo({ path }: { path: string }) {
+export default function EditScreenInfo({ path }: { path: string })
+{
   return (
     <View>
       <View style={styles.getStartedContainer}>
@@ -43,7 +44,8 @@ export default function EditScreenInfo({ path }: { path: string }) {
   );
 }
 
-function handleHelpPress() {
+function handleHelpPress()
+{
   WebBrowser.openBrowserAsync(
     'https://docs.expo.io/get-started/create-a-new-app/#opening-the-app-on-your-phonetablet'
   );
