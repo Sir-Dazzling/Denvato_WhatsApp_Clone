@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-denvatochat-dev-104220-authRole",
+      "UnauthRoleArn": "arn:aws:iam::767165702642:role/amplify-denvatochat-dev-104220-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::767165702642:role/amplify-denvatochat-dev-104220-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-denvatochat-dev-104220-deployment",
+      "UnauthRoleName": "amplify-denvatochat-dev-104220-unauthRole",
+      "StackName": "amplify-denvatochat-dev-104220",
+      "StackId": "arn:aws:cloudformation:us-east-2:767165702642:stack/amplify-denvatochat-dev-104220/3408aff0-3227-11eb-b827-06b877690e00",
+      "AmplifyAppId": "d3rv1hekid8f6u"
+    }
+  }
+}
