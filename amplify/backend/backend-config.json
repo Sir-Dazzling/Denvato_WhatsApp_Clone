@@ -1,1 +1,10 @@
-{}
+{
+  "auth": {
+    "denvatochat0ef5ccd3": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}

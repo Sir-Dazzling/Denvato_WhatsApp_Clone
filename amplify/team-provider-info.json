@@ -10,6 +10,11 @@
       "StackName": "amplify-denvatochat-dev-104220",
       "StackId": "arn:aws:cloudformation:us-east-2:767165702642:stack/amplify-denvatochat-dev-104220/3408aff0-3227-11eb-b827-06b877690e00",
       "AmplifyAppId": "d3rv1hekid8f6u"
+    },
+    "categories": {
+      "auth": {
+        "denvatochat0ef5ccd3": {}
+      }
     }
   }
 }

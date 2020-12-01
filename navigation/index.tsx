@@ -99,7 +99,7 @@ function RootNavigator()
           headerTitle: () => (
             <TouchableHighlight
               style={styles.headerContainer}
-              onPress={() => console.log("pressed smtin")}>
+              onPress={() => console.log("pressed smtins")}>
               <Text style={{
                 color: "#fff",
                 fontSize: 22
