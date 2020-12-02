@@ -14,7 +14,7 @@ const ContactListItem = (props: ContactListItemProps) =>
 {
     const { user } = props;
 
-    const userAvatar = "https://avatars2.githubusercontent.com/u/33727291?s=460&u=4afe260b1d38daf898273cba9535455c34f2d07d&v=4";
+    // const userAvatar = "https://avatars2.githubusercontent.com/u/33727291?s=460&u=4afe260b1d38daf898273cba9535455c34f2d07d&v=4";
 
     const navigation = useNavigation();
 
@@ -27,7 +27,7 @@ const ContactListItem = (props: ContactListItemProps) =>
         <TouchableOpacity onPress={onClick}>
             <View style={styles.container}>
                 <View style={styles.leftContainer}>
-                    <Image source={{ uri: userAvatar }} style={styles.avatar} />
+                    <Image source={{ uri: user.imageUri }} style={styles.avatar} />
                     <View style={styles.midContainer}>
                         <Text style={styles.username}>{user.name}</Text>
                         <Text style={styles.lastMessage}>{user.status}</Text>
