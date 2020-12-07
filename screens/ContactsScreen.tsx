@@ -3,7 +3,6 @@ import React, { useEffect, useState } from 'react';
 import { FlatList, StyleSheet } from 'react-native';
 import ContactListItem from '../components/ContactListItem';
 import { View } from '../components/Themed';
-import Users from '../data/Users';
 import { listUsers } from '../graphql/queries';
 
 export default function ContactsScreen()
