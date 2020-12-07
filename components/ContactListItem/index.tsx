@@ -1,9 +1,8 @@
 import { useNavigation } from '@react-navigation/native';
-import { format } from 'date-fns';
+import { API, Auth, graphqlOperation } from 'aws-amplify';
 import React from 'react';
 import { Image, Text, TouchableOpacity, View } from 'react-native';
-import { API, Auth, graphqlOperation } from 'aws-amplify';
-import { createChatRoom, createChatRoomUser } from '../../graphql/mutations'
+import { createChatRoom, createChatRoomUser } from '../../graphql/mutations';
 import { User } from '../../types';
 import styles from './style';
 
